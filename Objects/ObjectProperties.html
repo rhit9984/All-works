@@ -1,0 +1,125 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>An Object is an Unordered Collection of Properties</h1>
+    <h3>Properties are the most important part of JavaScript objects.</h3>
+    <h3>Properties can be changed, added, deleted, and some are read only.</h3>
+    <h2>Accessing JavaScript Properties</h2>
+    <p>The syntax for accessing the property of an object is:</p>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30,
+            city: "New York",
+            country: "USA"
+            // firstname
+        };
+        let personelInfo = prompt("What do you want to know about the person? (firstName, lastName, age, city, country, Education)");
+        document.getElementById("demo").innerHTML = person[personelInfo];
+        alert(person[personelInfo]);
+    </script>
+
+    
+</body>
+</html> -->
+
+<!-- =========
+Adding New Properties to an Object=========== -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>An Object is an Unordered Collection of Properties</h1>
+    <h3>Properties are the most important part of JavaScript objects.</h3>
+    <h3>Properties can be changed, added, deleted, and some are read only.</h3>
+    <h2>Accessing JavaScript Properties</h2>
+    <p>The syntax for accessing the property of an object is:</p>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30,
+            city: "New York",
+            country: "USA"
+            // firstname
+        };
+        // let personelInfo = prompt("What do you want to know about the person? (firstName, lastName, age, city, country, Education)");
+        document.getElementById("demo").innerHTML = person["firstName"]+" " + person["lastName"] + " " + person["age"] + " " + person["city"] + " " + person["country"];
+        // alert(person[personelInfo]);
+    </script>
+
+    
+</body>
+</html> -->
+
+
+<!-- ====================Deleting Properties================= -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Deleting property</title>
+</head>
+<body>
+    <h1>Deleting Properties</h1>
+    <P>The delete keyword deletes a property from an object:</P>
+    <H3>Example</H3>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30,
+            city: "New York",
+            country: "USA"
+        };
+        delete person.age;
+        document.getElementById("demo").innerHTML = person["firstName"]+" " + person["lastName"] + " " + person["age"] + " " + person["city"] + " " + person["country"];
+        // place of the age property in the object = undefined
+    </script>
+
+    
+</body>
+</html> -->
+
+
+<!-- ===============Nasted Object==================== -->
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Accessing Nested Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create nested Objects
+const myObj = {
+  name: "John",
+  age: 30,
+  myCars: {
+    car1: "Ford",
+    car2: "BMW",
+    car3: "Fiat"
+  }
+}
+document.getElementById("demo").innerHTML = myObj.myCars.car2;
+</script>
+
+</body>
+</html>
